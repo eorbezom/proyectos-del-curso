@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--  CREDENCIAL PARA THYMELIFE-->
+<head>
+<meta charset="UTF-8">
+<title>Pagina</title>
+</head>
+<body>
+
+	<h1>Bienvenidos a la tabla persona 😎</h1>
+	
+	
+	<table border="2">
+		<tr>
+			<td>ID</td>
+			<td>NOMBRE</td>
+			<td>EPELLIDOS</td>
+			<td>EDAD</td>
+			<td>FECHA/NACIMIENTO</td>
+			<td>ESTADO CIVIL</td>
+			<td>FORTUNA</td>
+		</tr>
+		<tr th:each="persona: ${personas}">
+			<td th:text="${persona.id}"></td>
+			<td th:text="${persona.nombre}"></td>
+			<td th:text="${persona.apellido}"></td>
+			<td th:text="${persona.edad}"></td>
+			<td th:text="${persona.fNacimiento}"></td>
+			<td th:text="${persona.casado}"></td>
+			<td th:text="${persona.fortuna}"></td>
+			
+		</tr>
+	</table>
+
+</body>
+</html>

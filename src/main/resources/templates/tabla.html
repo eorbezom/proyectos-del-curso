@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--  CREDENCIAL PARA THYMELIFE-->
+<head>
+<meta charset="UTF-8">
+<title>Lista Empleos</title>
+</head>
+<body>
+
+	<h1>Bienvenidos a lista de empleos 😎</h1>
+	<table style="width: 100% " border="1" >
+		<tr>
+			<th>Id</th>
+			<th>Puesto</th>
+			<th>Salario</th>
+			<th>Fecha de publicacion</th>
+			<th>Descripcion</th>
+			
+		</tr>
+		<tr th:each="vacante : ${vacantes}"><!-- SE CRE EL VARIABLE TENPORAL VACANTE -->
+			<td th:text="${vacante.id}">Emil</td>
+			<td th:text="${vacante.nombre}">Emil</td>
+			<td th:text="${vacante.salario}">Emil</td>
+			<td th:text="${vacante.fecha}">Emil</td>
+			<td th:text="${vacante.descripcion}">Emil</td>			
+		</tr>
+		
+	</table>
+
+</body>
+</html>

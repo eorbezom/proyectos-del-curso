@@ -9,12 +9,13 @@
 
 
 <body>
-
+	 <img th:src="@{/images/logo.png}" width="136" height="136" >
 	<h1 class="text-primary">Bienvenidos a la tabla persona 😎</h1>
 	
 	
 	<table class="table table-bordered border-primary table-striped table-hover">
 		<tr >
+			<td>FOTO</td>
 			<td class="text-danger">ID</td>
 			<td class="text-danger">NOMBRE</td>
 			<td class="text-danger">EPELLIDOS</td>
@@ -24,6 +25,11 @@
 			<td class="text-danger">FORTUNA</td>
 		</tr>
 		<tr th:each="persona: ${personas}">
+			<td>
+				
+				 <img th:src="@{/images/{img}(img=${persona.imagen})}" width="136" height="136" > <!-- IMG ES VARIABLE TEMPORAL -->
+							 	
+			</td>
 			<td th:text="${persona.id}"></td>
 			<td th:text="${persona.nombre}"></td>
 			<td th:text="${persona.apellido}"></td>

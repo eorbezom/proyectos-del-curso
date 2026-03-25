@@ -13,6 +13,9 @@ public class Persona {
 	private boolean casado;
 	private Date fNacimiento;
 	private double fortuna;
+	private String imagen="no-image.png";
+	
+	
 	public Integer getId() {
 		return id;
 	}
@@ -55,10 +58,18 @@ public class Persona {
 	public void setFortuna(double fortuna) {
 		this.fortuna = fortuna;
 	}
+	
+	
+	public String getImagen() {
+		return imagen;
+	}
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
 	@Override
 	public String toString() {
 		return "Persona [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", casado="
-				+ casado + ", fNacimiento=" + fNacimiento + ", fortuna=" + fortuna + "]";
+				+ casado + ", fNacimiento=" + fNacimiento + ", fortuna=" + fortuna + ", imagen=" + imagen + "]";
 	}
 	
 	

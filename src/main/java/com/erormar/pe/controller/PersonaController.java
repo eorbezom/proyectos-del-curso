@@ -36,6 +36,7 @@ public class PersonaController {
 			persona1.setfNacimiento(sdf.parse("16-02-2016"));
 			persona1.setCasado(false);
 			persona1.setFortuna(20.00);
+			persona1.setImagen("foto.png");
 			
 			
 			Persona persona2 =new Persona();
@@ -46,6 +47,7 @@ public class PersonaController {
 			persona2.setfNacimiento(sdf.parse("01-01-2024"));
 			persona2.setCasado(true);
 			persona2.setFortuna(0.00);
+			persona2.setImagen("foto1.png");
 			
 			Persona persona3 =new Persona();
 			persona3.setId(3);
@@ -56,6 +58,7 @@ public class PersonaController {
 			persona3.setCasado(false);
 			persona3.setFortuna(1000.00);
 			
+			
 			Persona persona4 =new Persona();
 			persona4.setId(4);
 			persona4.setNombre("Anonimus");
@@ -64,7 +67,7 @@ public class PersonaController {
 			persona4.setfNacimiento(sdf.parse("05-05-1995"));
 			persona4.setCasado(true);
 			persona4.setFortuna(0.00);
-			
+			persona4.setImagen("foto2.png");
 			
 			lista.add(persona1);
 			lista.add(persona2);

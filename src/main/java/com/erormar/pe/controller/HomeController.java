@@ -100,6 +100,7 @@ public class HomeController {
 			vacante1.setDescripcion("Por motivo de Expancion Empresarial necesita un desarrollador Back End");
 			vacante1.setFecha(sdf.parse("24-04-2026"));
 			vacante1.setSalario(2500.2);
+			vacante1.setDestacado(1);
 			
 			//CREAMOS UNA FERTA DE TRABAJO
 			Vacante vacante2 = new Vacante();
@@ -108,6 +109,7 @@ public class HomeController {
 			vacante2.setDescripcion("Por motivo de Expancion Empresarial necesita un desarrollador Fron End");
 			vacante2.setFecha(sdf.parse("24-04-2026"));
 			vacante2.setSalario(2200.1);
+			vacante2.setDestacado(0);
 			
 			
 			//CREAMOS UNA FERTA DE TRABAJO
@@ -117,6 +119,7 @@ public class HomeController {
 			vacante3.setDescripcion("Por motivo de Expancion Empresarial necesita un desarrollador Full Stack");
 			vacante3.setFecha(sdf.parse("24-04-2026"));
 			vacante3.setSalario(4000.0);
+			vacante3.setDestacado(1);
 			
 			
 			//CREAMOS UNA FERTA DE TRABAJO
@@ -126,6 +129,7 @@ public class HomeController {
 			vacante4.setDescripcion("Por motivo de Expancion Empresarial necesita un tester probador de software");
 			vacante4.setFecha(sdf.parse("24-04-2026"));
 			vacante4.setSalario(1500.0);
+			vacante4.setDestacado(0);
 			
 			//CREAMOS UNA FERTA DE TRABAJO
 			Vacante vacante5 = new Vacante();
@@ -135,6 +139,7 @@ public class HomeController {
 					+ "que puede ocupar el liderasgo que conpacidades comunicativas");
 			vacante5.setFecha(sdf.parse("24-04-2026"));
 			vacante5.setSalario(4000.0);
+			vacante5.setDestacado(0);
 			
 			
 			//CREAMOS UNA FERTA DE TRABAJO
@@ -144,6 +149,7 @@ public class HomeController {
 			vacante6.setDescripcion("Por motivo de Expancion Empresarial necesita un vendedor con experiencia");
 			vacante6.setFecha(sdf.parse("24-04-2026"));
 			vacante6.setSalario(2000.0);
+			vacante6.setDestacado(1);
 			
 			//AGREGAMOS  LOS OBJETOS DE TIPO VACANTE A LA LISTA
 			lista.add(vacante1);

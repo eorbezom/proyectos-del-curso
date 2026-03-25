@@ -44,7 +44,7 @@ public class PersonaController {
 			persona2.setApellido("Orbezo FIRULAYS");
 			persona2.setEdad(35);
 			persona2.setfNacimiento(sdf.parse("01-01-2024"));
-			persona2.setCasado(false);
+			persona2.setCasado(true);
 			persona2.setFortuna(0.00);
 			
 			Persona persona3 =new Persona();
@@ -62,7 +62,7 @@ public class PersonaController {
 			persona4.setApellido("fututro proyecto");
 			persona4.setEdad(30);
 			persona4.setfNacimiento(sdf.parse("05-05-1995"));
-			persona4.setCasado(false);
+			persona4.setCasado(true);
 			persona4.setFortuna(0.00);
 			
 			

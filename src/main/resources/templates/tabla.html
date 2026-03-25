@@ -4,17 +4,20 @@
 <head>
 <meta charset="UTF-8">
 <title>Lista Empleos</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </head>
 <body>
 
-	<h1>Bienvenidos a lista de empleos 😎</h1>
-	<table style="width: 100% " border="1" >
+	<h1 class="text-primary">Bienvenidos a lista de empleos 😎</h1>
+	<table class="table table-bordered border-primary table-striped table-hover" >
 		<tr>
 			<th>Id</th>
 			<th>Puesto</th>
 			<th>Salario</th>
 			<th>Fecha de publicacion</th>
 			<th>Descripcion</th>
+			<th>Destacado</th>
 			
 		</tr>
 		<tr th:each="vacante : ${vacantes}"><!-- SE CRE EL VARIABLE TENPORAL VACANTE -->
@@ -22,10 +25,27 @@
 			<td th:text="${vacante.nombre}">Emil</td>
 			<td th:text="${vacante.salario}">Emil</td>
 			<td th:text="${vacante.fecha}">Emil</td>
-			<td th:text="${vacante.descripcion}">Emil</td>			
+			<td th:text="${vacante.descripcion}">Emil</td>	
+			
+			
+			<!--   SIN CONDICION
+			<td th:text="${vacante.destacado}">Emil</td>	
+			-->
+			
+			<!-- CONDICIONAL ELVIS 
+			<td th:text="${vacante.destacado == 1 ? 'SI':'NO'}">Emil</td>	
+				-->
+				
+				<!-- CONDICIONAL IF  UNLESS -->
+			<td>
+				<span th:if="${vacante.destacado==1}" class="badge bg-success">SI</span>
+				<span th:unless="${vacante.destacado==1}"  class="badge bg-danger">NO</span>
+			
+			</td>	
+				
 		</tr>
 		
 	</table>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

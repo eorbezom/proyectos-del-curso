@@ -19,6 +19,7 @@
 			<th>Descripcion</th>
 			<th>Destacado</th>
 			<th>Detalle</th>
+			<th>Opciones</th>
 			
 		</tr>
 		<tr th:each="vacante : ${vacantes}"><!-- SE CRE EL VARIABLE TENPORAL VACANTE -->
@@ -46,6 +47,9 @@
 			<td>
 			<a th:href="@{/vacantes/view/{id}(id=${vacante.id})}"  class="btn btn-success">Detalle</a>
 			
+			</td>
+			<td >
+				<a th:href="@{/vacantes/delete(id=${vacante.id})}"  class="btn btn-danger">Eliminar</a>
 			</td>
 				
 		</tr>
